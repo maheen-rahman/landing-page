@@ -1,68 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
 body{
+    background-color: #111015;
+    background-image: url('asset/background.svg');
+    background-repeat: no-repeat;
     background-size: cover;
-   /* background-image: url(../background.jpg);*/
-   /* overflow-y: hidden;
-    overflow-x: hidden;*/
-    background-color: rgba(5, 4, 4, 0.942);
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
 }
 
-h1{
-    font-size: 2cm;
-    position:relative;
-    padding-left: 50px;
-    padding-top:85px;
-    font-style: italic;
-    color: white;
-    
-    
+.main {
+    display: flex;
+    justify-content: center;
+}
 
-}
-h2{
-    font-size: 0.48cm;
-    position: relative;
-    bottom:500px;
-    padding-left: 20px;
-    color: white;
-}
-footer{
-    font-size: 0.6cm;
-    display: inline-flex;
-    border-style: hidden;
-    border-radius: 4px;
-    background-color: rgb(44, 42, 42);
-    padding-left: 2px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-right: 2px;
-    color: white;
-    position: relative;
-    left: 100px;
-    bottom: 480px;
-    
-    
-}
-div{
-    position: relative;
-    left:1000px;
-}
-.one{
-    position: relative;
-    bottom:280px;
-    width:54cm;
-    border-style: hidden;
-    border-radius: 10px;
-    
-    
-    
-}
-.two{
+.texture {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('asset/noise.svg');
+    opacity: 0.07;
+    background-size: cover;
     position: absolute;
-    bottom: 20px;
-    right:20px;
-    width:52cm;
-    border-style: hidden;
-    border-radius: 10px;
-    
-    
+    z-index: -999;
 }
 
+.info {
+    padding-top: 200px;
+}
+
+.logo-tile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.logo {
+    width: 64px;
+}
+
+.name {
+    color: white;
+    font-size: 48px;
+}
+
+.description {
+    color: white;
+    font-size: 24px;
+    width: 580px;
+    margin-bottom: 40px;
+}
+
+.screenshots {
+    display: flex;
+    margin-left: 200px;
+    padding-top: 200px;
+}
+
+.creed {
+    width: 290px;
+    height: 643px;
+    border-radius: 12px;
+    background-image: url('asset/creed.png');
+    background-size: cover;
+}
+
+.chainsaw {
+    width: 290px;
+    height: 643px;
+    border-radius: 12px;
+    background-size: cover;
+    background-image: url('asset/chainsaw.png');
+    position: relative;
+    top: 100px;
+    right: 150px;
+}
+
+.download {
+    text-decoration: none;
+    color: #AFAFAF;
+    font-size: 32px;
+    background-color: rgba(156, 156, 156, 0.1);
+    padding: 6px 20px;
+    border-radius: 8px;
+}
+
+.beta {
+    color: white;
+    background-color: rgba(156, 156, 156, 0.1);
+    padding: 8px 16px;
+    border-radius: 50px;
+    border: 0.7px solid #AFAFAF;
+    font-size: 16px;
+}
